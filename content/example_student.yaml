@@ -6,14 +6,11 @@
 # information, and update portfolio_config.yaml to point to it.
 # ============================================================
 
-name: "Zeke the Wonder Dog"
-tagline: "Aspiring Data Scientist | MSU Mascot | Good Boy"
+name: "Terry White"
+tagline: "Data Scientist"
 
 about: |
-  I'm a red English lab and one of Michigan State's beloved mascots, but
-  data science is my true calling. When I'm not leading the Spartans onto
-  the field, I'm wrangling datasets and building predictive models —
-  mostly with my nose, occasionally with my paws.  
+  I'm an MSU data scientist passionate about using data to solve financial problems. In this course, I've built end-to-end pipelines with SQL, Python, and Git. I'm seeking data analyst roles and excited to apply stats/ML to real business questions.
 
   My projects focus on turning complex data into clear insights that
   *any human (or dog) can act on*. I believe the best analysis is one
