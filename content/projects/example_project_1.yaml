@@ -5,43 +5,29 @@
 # Copy this file to create your own project entries.
 # ============================================================
 
-title: "Optimal Nap Spot Prediction Across Campus"
+title: "Predicting Ethereum Price using Bitcoin"
 
 short_summary: >
-  Built a model to identify the best nap locations on MSU's campus based
-  on sunlight exposure, foot traffic, grass quality, and proximity to
-  food smells. Findings have been peer-reviewed by three other dogs and
-  were described as "life-changing" and "very good."
+ Using simple regression models to predict price and volatility of Etheruem based on Etheruem and Bitcoin historical data
 
 tech_stack:
   - Python
-  - scikit-learn
+  - numpy
+  - scipy
   - pandas
   - matplotlib
+  - seaborn
   - Jupyter Notebooks
 
 problem_statement: >
-  Finding a good nap spot is harder than it looks. Campus is large,
-  conditions change throughout the day, and the best patches of sun
-  move. A mascot operating on intuition alone wastes valuable resting
-  time — a problem that affects productivity, morale, and tail-wagging
-  rates across the entire campus community.
+  This project investigates whether the price of Ethereum can be predicted using the price of Bitcoin, given their strong market correlation despite different underlying purposes. It also explores how Bitcoin-related public sentiment and market events influence broader cryptocurrency price dynamics, using historical data and modeling techniques to better understand these relationships.
 
 approach: >
-  Collected location data across 47 candidate nap sites over a full
-  academic semester. Features included average daily sunlight (hours),
-  grass softness score (1–10, assessed manually), nearby food-cart
-  proximity, and pedestrian traffic by hour. Trained a gradient boosting
-  classifier to predict a site's "nap quality" rating and used SHAP
-  values to explain which features mattered most.
+  The model uses curve fit and a polynomial with a highest degree 4 that takes price data from Bitcoin and predicts the  estimated price curve of Ethereum. It has 4 coeffient parameters and one x variable that represents the Bitcoin price data. I chose this model because it was simplistic, but had enough terms to be able to get a good prediction of the price. To measure accuracy I use the RMSE of my model. I will not predict a future price because that requires an assumption of Bitcoin's future price.
 
 results_impact: >
-  The model achieved 89% accuracy on held-out test sites. Sunlight
-  duration and grass softness were the top two predictive features,
-  while proximity to the student union food court provided a meaningful
-  but secondary boost. A ranked list of top-10 nap sites was distributed
-  to the campus dog community and has since been downloaded 847 times.
+  I learned that Ethereum is greatly impacted by sentiments towards and market events around Bitcoin, which is a clear relationship when looking at the correlation to their prices and match times of steep increases in price to succesfull  moments in Bitcoin's price. I encountered a challenge preparing the data to plot the prices of both currencies and discovered solution to make sure the datasets match. I found that, you can predict the price of Ethereum by the prices of Bitcoin, just not with great accuracy due to a large dataset (831 RMSE)
 
 repo_url: "https://github.com/zeke-wonder-dog/nap-spot-predictor"
 notebook_url: "https://github.com/zeke-wonder-dog/nap-spot-predictor/blob/main/analysis.ipynb"
-image_path: "img/placeholder_project_1.png"
+image_path: "img/Screenshot 2026-03-18 at 9.37.56 AM.png"
