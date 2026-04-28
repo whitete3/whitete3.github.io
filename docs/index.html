@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terry White | Data Science Portfolio</title>
+
+  <!-- Base styles always loaded -->
+  <link rel="stylesheet" href="css/base.css" />
+
+  <!-- Theme stylesheet — controlled by `theme` in portfolio_config.yaml -->
+  <link rel="stylesheet" href="css/themes/dark.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-name">Terry White</div>
+      <div class="header-tagline">Data Science Student | Data Analysis &amp; Visualization</div>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== Main content (filled in by child templates) ===== -->
+  <main class="site-main">
+    
+
+<!-- ===== About section ===== -->
+<section id="about" class="section about-section">
+  <h2>About Me</h2>
+  <div class="about-text"><p>I'm a Data Science student at Michigan State University with experience using Python, SQL, and data visualization to analyze real-world datasets. I'm interested in turning data into clear insights that can help explain trends and support better decisions.</p>
+<p>My projects focus on financial data analysis, database querying, cloud computing workflows, and visual communication. Through my coursework, I've worked with tools like pandas, matplotlib, SQL, GitHub, and AWS.</p>
+<p>This portfolio highlights selected projects from my coursework and personal data science work.</p></div>
+</section>
+
+<!-- ===== Projects section ===== -->
+<section id="projects" class="section projects-section">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/actual_vs_pred.png"
+          alt="Thumbnail for Bitcoin vs Ethereum Market Analysis"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">Bitcoin vs Ethereum Market Analysis</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">Analyzed historical price data for Bitcoin and Ethereum to compare trends, volatility, and return distributions using Python.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">matplotlib</span>
+          
+          <span class="tech-badge">seaborn</span>
+          
+          <span class="tech-badge">scipy</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>Understanding how major cryptocurrencies behave over time and how their price movements compare can help identify patterns and risk differences.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Cleaned and processed time-series data, calculated returns, and created visualizations to explore price trends and relationships between BTC and ETH.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>Found differences in volatility and growth patterns between Bitcoin and Ethereum, highlighting how each asset behaves under different market conditions.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/whitete3/crypto-analysis-btc-eth" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+          <a href="https://github.com/whitete3/crypto-analysis-btc-eth/blob/main/notebooks/crypto_analysis.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+            View Notebook
+          </a>
+          
+        </div>
+      </div>
+
+    </article>
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/aws_confusion_matrix.png"
+          alt="Thumbnail for AWS NYC 311 Complaint Resolution Model"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">AWS NYC 311 Complaint Resolution Model</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">Built a cloud-based data science workflow using NYC 311 complaint data to predict whether service requests would be resolved within 3 days.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">AWS</span>
+          
+          <span class="tech-badge">S3</span>
+          
+          <span class="tech-badge">Athena</span>
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">scikit-learn</span>
+          
+          <span class="tech-badge">SQL</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>City service data can help identify patterns in complaint resolution times. This project focused on predicting whether a 311 complaint would be resolved quickly.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Used AWS-based data storage and querying workflows, then trained a baseline logistic regression model using features such as agency, borough, problem type, zip code, day of week, and hour of day.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>The baseline model reached 88.0% accuracy, with strong precision and recall for quickly resolved complaints. The main limitation was class imbalance, since most complaints were resolved quickly.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/whitete3/aws-nyc311-whitete3" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+          <a href="https://github.com/whitete3/aws-nyc311-whitete3/blob/main/notebooks/model_train_and_eval.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+            View Notebook
+          </a>
+          
+        </div>
+      </div>
+
+    </article>
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/hw2_sql_report.png"
+          alt="Thumbnail for SQL Analysis with the Sakila Database"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">SQL Analysis with the Sakila Database</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">Used SQL and Python to analyze the Sakila movie rental database, focusing on joins, aggregation, CTEs, window functions, and customer spending behavior.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">SQL</span>
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">Docker</span>
+          
+          <span class="tech-badge">MySQL</span>
+          
+          <span class="tech-badge">Adminer</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>Understanding customer rental and payment behavior requires connecting multiple relational database tables and summarizing the results in a clear way.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Wrote SQL queries using joins, GROUP BY, HAVING, CTEs, window functions, and EXPLAIN to analyze customer activity, spending, rankings, and query performance.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>Built a manager-style report ranking customers by total spending and practiced validating SQL results with smaller sanity-check queries.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/whitete3/cmse492-hw02-whitete3" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+          <a href="https://github.com/whitete3/cmse492-hw02-whitete3/blob/main/HW02-STUDENT.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+            View Notebook
+          </a>
+          
+        </div>
+      </div>
+
+    </article>
+    
+  </div>
+</section>
+
+<!-- ===== Contact section ===== -->
+<section id="contact" class="section contact-section">
+  <h2>Contact</h2>
+  <ul class="contact-list">
+    
+    <li>
+      <span class="contact-label">Email:</span>
+      <a href="mailto:whitete3@msu.edu">whitete3@msu.edu</a>
+    </li>
+    
+    
+    <li>
+      <span class="contact-label">LinkedIn:</span>
+      <a href="https://www.linkedin.com/in/terry-white-065519274" target="_blank" rel="noopener">https://www.linkedin.com/in/terry-white-065519274</a>
+    </li>
+    
+    
+    <li>
+      <span class="contact-label">GitHub:</span>
+      <a href="https://github.com/whitete3" target="_blank" rel="noopener">https://github.com/whitete3</a>
+    </li>
+    
+  </ul>
+</section>
+
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <p>Built with the Data Science Portfolio Template &mdash; powered by Python &amp; Jinja2.</p>
+  </footer>
+
+</body>
+</html>
