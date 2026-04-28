@@ -1,0 +1,32 @@
+title: "AWS NYC 311 Complaint Resolution Model"
+
+short_summary: >
+  Built a cloud-based data science workflow using NYC 311 complaint data to predict
+  whether service requests would be resolved within 3 days.
+
+tech_stack:
+  - AWS
+  - S3
+  - Athena
+  - Python
+  - pandas
+  - scikit-learn
+  - SQL
+
+problem_statement: >
+  City service data can help identify patterns in complaint resolution times.
+  This project focused on predicting whether a 311 complaint would be resolved quickly.
+
+approach: >
+  Used AWS-based data storage and querying workflows, then trained a baseline logistic
+  regression model using features such as agency, borough, problem type, zip code,
+  day of week, and hour of day.
+
+results_impact: >
+  The baseline model reached 88.0% accuracy, with strong precision and recall for quickly
+  resolved complaints. The main limitation was class imbalance, since most complaints
+  were resolved quickly.
+
+repo_url: "https://github.com/whitete3/aws-nyc311-whitete3"
+notebook_url: "https://github.com/whitete3/aws-nyc311-whitete3/blob/main/notebooks/model_train_and_eval.ipynb"
+image_path: "img/aws_confusion_matrix.png"

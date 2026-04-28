@@ -1,0 +1,20 @@
+# ============================================================
+# content/my_profile.yaml
+# ============================================================
+# This is my student profile for the portfolio website.
+# ============================================================
+
+name: "Terry White"
+tagline: "Data Science Student | Data Analysis & Visualization"
+
+about: |
+  I'm a Data Science student at Michigan State University with experience using Python, SQL, and data visualization to analyze real-world datasets. I'm interested in turning data into clear insights that can help explain trends and support better decisions.
+
+  My projects focus on financial data analysis, database querying, cloud computing workflows, and visual communication. Through my coursework, I've worked with tools like pandas, matplotlib, SQL, GitHub, and AWS.
+
+  This portfolio highlights selected projects from my coursework and personal data science work.
+
+# Contact information
+email: "whitete3@msu.edu"
+linkedin: "https://www.linkedin.com/in/terry-white-065519274"
+github: "https://github.com/whitete3"

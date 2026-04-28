@@ -1,0 +1,28 @@
+title: "Bitcoin vs Ethereum Market Analysis"
+
+short_summary: >
+  Analyzed historical price data for Bitcoin and Ethereum to compare trends,
+  volatility, and return distributions using Python.
+
+tech_stack:
+  - Python
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
+
+problem_statement: >
+  Understanding how major cryptocurrencies behave over time and how their
+  price movements compare can help identify patterns and risk differences.
+
+approach: >
+  Cleaned and processed time-series data, calculated returns, and created
+  visualizations to explore price trends and relationships between BTC and ETH.
+
+results_impact: >
+  Found differences in volatility and growth patterns between Bitcoin and
+  Ethereum, highlighting how each asset behaves under different market conditions.
+
+repo_url: "https://github.com/whitete3/crypto-analysis-btc-eth"
+notebook_url: "https://github.com/whitete3/crypto-analysis-btc-eth/blob/main/notebooks/crypto_analysis.ipynb"
+image_path: "img/actual_vs_pred.png"

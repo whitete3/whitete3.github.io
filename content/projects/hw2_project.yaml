@@ -1,0 +1,29 @@
+title: "SQL Analysis with the Sakila Database"
+
+short_summary: >
+  Used SQL and Python to analyze the Sakila movie rental database, focusing on joins,
+  aggregation, CTEs, window functions, and customer spending behavior.
+
+tech_stack:
+  - SQL
+  - Python
+  - pandas
+  - Docker
+  - MySQL
+  - Adminer
+
+problem_statement: >
+  Understanding customer rental and payment behavior requires connecting multiple
+  relational database tables and summarizing the results in a clear way.
+
+approach: >
+  Wrote SQL queries using joins, GROUP BY, HAVING, CTEs, window functions, and EXPLAIN
+  to analyze customer activity, spending, rankings, and query performance.
+
+results_impact: >
+  Built a manager-style report ranking customers by total spending and practiced
+  validating SQL results with smaller sanity-check queries.
+
+repo_url: "https://github.com/whitete3/cmse492-hw02-whitete3"
+notebook_url: "https://github.com/whitete3/cmse492-hw02-whitete3/blob/main/HW02-STUDENT.ipynb"
+image_path: "img/hw2_sql_report.png"
